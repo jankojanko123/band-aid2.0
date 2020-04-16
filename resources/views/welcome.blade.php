@@ -189,7 +189,9 @@
                         width: 150px;
                         background: rgba(20,115,238,0.56);">
                             <div class="flex-center pt-4" style="color: rgba(255,251,255,0.96)">
-                                <h5>5223 viewers</h5>
+
+                                    <h4> 82333 </h4>
+
                             </div>
                         </div>
                     </div>
@@ -218,7 +220,7 @@
                                 <div class="pl-3" id="flip1">
                                     <button type="button" class="btn btn-lg" style="color: seashell"
                                             data-toggle="modal">
-                                        <h3>Mac Demarco</h3>
+                                        <h3>{{$data->last()->name}}</h3>
                                     </button>
                                 </div>
                                 <div class="bs-example">
@@ -349,8 +351,8 @@
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
 <script type="text/javascript">
 
-    var id = "578388980";
-    var type = "video";
+    var id = "{{ $data->last()->media_id}}";
+    var type = "{{ $data->last()->type}}";
 
     if (type === 'stream') {
         new Twitch.Embed("twitch-embed", {

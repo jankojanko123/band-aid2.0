@@ -29,6 +29,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+Route::get('/','ArtistController@index');
+Route::get('/','MediaController@index');
+
 Route::post('/submit', function (Request $request) {
     $data = $request->validate([
         'title' => 'required|max:255',
