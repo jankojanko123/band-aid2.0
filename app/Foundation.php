@@ -4,11 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Media extends Model
+class Foundation extends Model
 {
     protected $fillable = [
-        'media_id',
-        'type',
-        'username'
+        'name',
+        'text',
+        'webpage',
+        'img'
     ];
 }
+

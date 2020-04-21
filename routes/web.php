@@ -14,10 +14,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    $links = \App\Link::all();
-    return view('welcome', ['links' => $links]);
-});
 
 Route::get('/submit', function () {
     return view('submit');
@@ -26,21 +22,49 @@ Route::get('/submit', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
+Route::get('artist/submit', 'ArtistController@edit');
+Route::get('media/submit', 'MediaController@edit');
+Route::get('foundation/submit', 'FoundationController@edit');
 
-
-Route::get('/','ArtistController@index');
-Route::get('/','MediaController@index');
-
-Route::post('/submit', function (Request $request) {
+Route::post('artist/submit', function (Request $request) {
     $data = $request->validate([
-        'title' => 'required|max:255',
-        'url' => 'required|url|max:255',
-        'description' => 'required|max:255',
+        'name' => 'required|max:255',
+        'text' => 'required|max:255',
+        'apple_music' => 'max:255',
+        'spotify_id' => 'max:255',
+        'youtube_id' => 'max:255',
+        'band_camp_id' => 'max:255',
+        'soundcloud_id' => 'max:255',
+        'webpage' => 'max:255',
     ]);
 
-    $link = tap(new App\Link($data))->save();
+    $link = tap(new App\Artist($data))->save();
 
     return redirect('/');
 });
 
+Route::post('media/submit', function (Request $request) {
+    $data = $request->validate([
+        'media_id' => 'max:255',
+        'type' => 'required|max:255',
+        'username' => 'max:255',
+    ]);
+
+    $link = tap(new App\Media($data))->save();
+
+    return redirect('/');
+});
+
+Route::post('foundation/submit', function (Request $request) {
+    $data = $request->validate([
+        'name' => 'required|max:255',
+        'text' => 'required|max:255',
+        'webpage' => 'required|max:255',
+        'img' => 'required|max:255',
+    ]);
+
+    $link = tap(new App\Foundation($data))->save();
+
+    return redirect('/');
+});

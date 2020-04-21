@@ -2,10 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d18658-7e9c-4315-aa08-72147d13da6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppArtist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppFoundation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppMedia" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blue Cross" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mac Demarco" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Foundation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FoundationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/twitch-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_081425_create_foundation_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_21_114445_add_username_to_media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pleceholder test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/artist/submit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/foundation/submit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/media/submit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/true" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/links.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/links.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_16_071129_create_artist_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_16_071129_create_artist_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/submit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -140,27 +170,34 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/romanzipp/laravel-twitch" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aX7bXGOY5R5iKmX6RXPVRhnpFp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/jpg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/curl" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel\links\public\jpg" />
-      <recent name="C:\xampp\htdocs\Laravel\links\public\svg" />
+      <recent name="C:\xampp\htdocs\Laravel\links\app\Http\curl" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views" />
+      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\foundation" />
+      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\media" />
+      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,22 +217,41 @@
       <option name="presentableId" value="Default" />
       <updated>1586870156782</updated>
       <workItem from="1586870158417" duration="46885000" />
-      <workItem from="1587018500756" duration="5194000" />
+      <workItem from="1587018500756" duration="13386000" />
+      <workItem from="1587043460634" duration="5319000" />
+      <workItem from="1587367373325" duration="26568000" />
+      <workItem from="1587455381490" duration="11368000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="222" y="60" key="#Deployment" timestamp="1587368638510">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="222" y="60" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1587368638510" />
+    <state x="515" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587389471220">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="515" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1587389471220" />
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587021004014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021004014" />
-    <state x="472" y="100" width="971" height="638" key="DiffContextDialog" timestamp="1587021192643">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587386716521">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587386716521" />
+    <state x="472" y="100" width="971" height="638" key="DiffContextDialog" timestamp="1587389525282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="100" width="971" height="638" key="DiffContextDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021192643" />
+    <state x="472" y="100" width="971" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1587389525282" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586872551723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -204,14 +260,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587020675174" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1586959559473">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1587401747017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1587401747017" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1587381039897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586959559473" />
-    <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1587021874156">
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587381039897" />
+    <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1587389525282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021874156" />
+    <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1587389525282" />
     <state x="94" y="100" width="507" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586981379009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,17 +282,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586981379009" />
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587018505948">
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587043460500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587018505948" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1586966945219">
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587043460500" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1587394596567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586966945219" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587021629047">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587394596567" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587472250566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021629047" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587472250566" />
   </component>
 </project>

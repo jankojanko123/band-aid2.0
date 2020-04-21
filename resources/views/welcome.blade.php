@@ -28,6 +28,9 @@
     </script>
     <script>
         $(document).ready(function () {
+            $("#flip1").ready(function () {
+                $("#panel1").slideDown("slow");
+            });
             $("#flip1").click(function () {
                 $("#panel1").slideDown("slow");
             });
@@ -42,6 +45,9 @@
     </script>
     <script>
         $(document).ready(function () {
+            $("#flip2").ready(function () {
+                $("#panel2").slideDown("slow");
+            });
             $("#flip2").click(function () {
                 $("#panel2").slideDown("slow");
             });
@@ -58,6 +64,25 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
+
+        <?php
+         $username = $media_data->last()->username;
+         $twitch = new romanzipp\Twitch\Twitch;
+         $twitch->setClientId('lze3t1okyae8txn8hys3utpit8osw4');
+         // Get User by Username
+
+         $result = $twitch->getUserByName($username);
+         // Check, if the query was successfull
+         if (!$result->success()) {
+             die('Ooops: ' . $result->error());
+         }
+         // Shift result to get single user data
+         $user = $result->shift();
+         $userId = $user->id;
+         $result = $twitch->getStreams(['user_id' => $userId], $paginator = NULL, isset($result) ? $result->next() : null);
+         $viewer_count = $result->data[0]->viewer_count;
+         $media_title = $result->data[0]->title;
+         ?>
 
 
         html, body {
@@ -159,7 +184,10 @@
     @if (Route::has('login'))
         <div class="top-right links text-black-50">
             @auth
-                <a href="{{ url('/home') }}">Home</a>
+                <a href="{{ url('/artist/submit') }}">Edit Artist</a>
+                <a href="{{ url('/media/submit') }}">Edit Media</a>
+                <a href="{{ url('/foundation/submit') }}">Edit Info</a>
+            <!--<a href="{{ url('/home') }}">Home</a>-->
             @else
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
@@ -182,16 +210,19 @@
             </div>
             <div class="row">
                 <div class="col-12">
+                    <div class="pl-5 pt-4 float-left">
+                        <div class="flex-center">
+                            <h5>{{$media_title}}</h5>
+                        </div>
+                    </div>
                     <div class="float-right">
                         <div class="backdrop" style="
                         border-radius: 0 0 200px 100px;
                         height: 100px;
                         width: 150px;
                         background: rgba(20,115,238,0.56);">
-                            <div class="flex-center pt-4" style="color: rgba(255,251,255,0.96)">
-
-                                    <h4> 82333 </h4>
-
+                            <div class="flex-center pt-4" style="color: rgba(255,251,255,0.96);">
+                                <h4>{{$viewer_count}}</h4> <h6>viewers</h6>
                             </div>
                         </div>
                     </div>
@@ -213,14 +244,15 @@
                             width: 800px;
                             background: rgba(20,115,238,0.56);">
                             <div class="flex-center pt-4">
-                                <button type="button" class="btn" style="color: seashell" data-toggle="modal">
-                                    <img src="../jpg/img-04.jpg" alt="Image" class="rounded-circle tm-img-timeline"
+                                <a href="{{$artist_data->last()->webpage}}">
+                                    <img src="{{ asset('jpg/img-04.jpg') }}" alt="Image"
+                                         class="rounded-circle tm-img-timeline"
                                          style="height: 100px; width: 100px">
-                                </button>
+                                </a>
                                 <div class="pl-3" id="flip1">
                                     <button type="button" class="btn btn-lg" style="color: seashell"
                                             data-toggle="modal">
-                                        <h3>{{$data->last()->name}}</h3>
+                                        <h3>{{$artist_data->last()->name}}</h3>
                                     </button>
                                 </div>
                                 <div class="bs-example">
@@ -234,12 +266,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>the badnd info placeholderthe badnd info placeholderthe badnd
-                                                        info
-                                                        placeholderthe badnd info placeholder
-                                                        the badnd info placeholderthe badnd info placeholderthe
-                                                        badnd
-                                                        info</p>
+                                                    <p>{{$artist_data->last()->text}}</p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-primary">Ok</button>
@@ -253,23 +280,7 @@
                         <div class="pt-0 " id="panel1">
                             <div class="flex-center">
                                 <div class="pt-4 pl-3 pr-3 text-center" style="color: #fff; font-size: 16px">
-                                    <text>The donated money goes to the Blue Cross foundation. There are gonna
-                                        be
-                                        alot of
-                                        happy
-                                        woofs. Thank youThe donated money goes to the Blue Cross foundation.
-                                        There
-                                        are gonna be alot of
-                                        happy
-                                        woofs. Thank youThe donated money goes to the Blue Cross foundation.
-                                        There
-                                        are gonna be alot of
-                                        happy
-                                        woofs. Thank you
-                                        Thank youThe donated money goes to the Blue Cross foundation. There are
-                                        gonna be alot of
-                                        happy
-                                        woofs. Thank you
+                                    <text>{{$artist_data->last()->text}}
                                     </text>
                                 </div>
                             </div>
@@ -281,15 +292,15 @@
                             width: 800px;
                             background: rgba(20,115,238,0.56);">
                                 <div class="flex-center pt-4">
-                                    <button type="button" class="btn" style="color: seashell" data-toggle="modal">
-                                        <img src="../jpg/img-03.jpg" alt="Image"
+                                    <a href="{{$foundation_data->last()->webpage}}">
+                                        <img src="{{ asset('jpg/img-03.jpg') }}" alt="Image"
                                              class="rounded-circle tm-img-timeline"
                                              style="height: 100px; width: 100px">
-                                    </button>
+                                    </a>
                                     <div class="pl-3" id="flip2">
                                         <button type="button" class="btn btn-lg" style="color: seashell"
                                                 data-toggle="modal">
-                                            <h3>Blue Cross Foundation</h3>
+                                            <h3>{{$foundation_data->last()->name}}</h3>
                                         </button>
                                     </div>
                                 </div>
@@ -302,23 +313,7 @@
                                 background: rgba(23,21,61,0.56);">
                                     <div class="flex-center pt-4 pl-3 pr-3 text-center"
                                          style="color: #fff; font-size: 16px">
-                                        <text>The donated money goes to the Blue Cross foundation. There are gonna
-                                            be
-                                            alot of
-                                            happy
-                                            woofs. Thank youThe donated money goes to the Blue Cross foundation.
-                                            There
-                                            are gonna be alot of
-                                            happy
-                                            woofs. Thank youThe donated money goes to the Blue Cross foundation.
-                                            There
-                                            are gonna be alot of
-                                            happy
-                                            woofs. Thank you
-                                            Thank youThe donated money goes to the Blue Cross foundation. There are
-                                            gonna be alot of
-                                            happy
-                                            woofs. Thank you
+                                        <text>{{$foundation_data->last()->text}}
                                         </text>
                                     </div>
                                 </div>
@@ -351,8 +346,8 @@
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
 <script type="text/javascript">
 
-    var id = "{{ $data->last()->media_id}}";
-    var type = "{{ $data->last()->type}}";
+    var id = "{{ $media_data->last()->media_id}}";
+    var type = "{{ $media_data->last()->type}}";
 
     if (type === 'stream') {
         new Twitch.Embed("twitch-embed", {
