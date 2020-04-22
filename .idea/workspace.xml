@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d18658-7e9c-4315-aa08-72147d13da6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AppArtist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppFoundation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AppMedia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blue Cross" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mac Demarco" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Foundation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FoundationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/twitch-api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_081425_create_foundation_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_21_114445_add_username_to_media.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pleceholder test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/artist/submit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/foundation/submit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/media/submit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/true" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/links.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/links.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_16_071129_create_artist_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_16_071129_create_artist_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/submit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

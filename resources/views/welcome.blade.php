@@ -165,6 +165,7 @@
             width: 800px;
             background: rgba(23, 21, 61, 0.56);
         }
+
     </style>
 </head>
 <body>
@@ -228,6 +229,16 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 pt-4">
+                    <div class="flex-center pt-1" style="color: rgba(255,251,255,0.96);">
+                        <h4>69</h4> <h4>/</h4> <h4>420</h4>
+                    </div>
+                    <div class="progress" style="height: 20px">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="container-fluid float-right d-flex">
@@ -246,7 +257,7 @@
                             <div class="flex-center pt-4">
                                 <a href="{{$artist_data->last()->webpage}}">
                                     <img src="{{ asset('jpg/img-04.jpg') }}" alt="Image"
-                                         class="rounded-circle tm-img-timeline"
+                                         class="rounded-circle tm-img-timeline animated"
                                          style="height: 100px; width: 100px">
                                 </a>
                                 <div class="pl-3" id="flip1">
