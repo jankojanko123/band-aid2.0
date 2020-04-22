@@ -16,6 +16,6 @@ class Artist extends Model
         'soundcloud_id',
         'webpage',
         'text',
-        'webpage'
+        'webpage',
     ];
 }

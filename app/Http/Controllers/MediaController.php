@@ -16,12 +16,16 @@ class MediaController extends Controller
         $this->middleware('auth');
     }
 
-    public function index() {
+    public function index()
+    {
+
         $data = \App\Media::all();
-        return view('welcome',compact('data'));
+        return view('welcome', compact('data'));
 
     }
-    public function edit() {
+
+    public function edit()
+    {
         return view('media/submit');
     }
 }

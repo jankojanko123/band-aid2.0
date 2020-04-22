@@ -66,6 +66,7 @@
     <style>
 
         <?php
+        //ger viewer count and title
          $username = $media_data->last()->username;
          $twitch = new romanzipp\Twitch\Twitch;
          $twitch->setClientId('lze3t1okyae8txn8hys3utpit8osw4');
@@ -82,6 +83,15 @@
          $result = $twitch->getStreams(['user_id' => $userId], $paginator = NULL, isset($result) ? $result->next() : null);
          $viewer_count = $result->data[0]->viewer_count;
          $media_title = $result->data[0]->title;
+
+         //get lastest img
+            $files_artist = scandir('images/artist', SCANDIR_SORT_DESCENDING);
+            $newest_artist_img = $files_artist[0];
+
+            $files_foundation = scandir('images/foundation', SCANDIR_SORT_DESCENDING);
+            $newest_foundation_img = $files_foundation[0];
+
+
          ?>
 
 
@@ -235,7 +245,8 @@
                         <h4>69</h4> <h4>/</h4> <h4>420</h4>
                     </div>
                     <div class="progress" style="height: 20px">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 75%"></div>
                     </div>
                 </div>
             </div>
@@ -256,7 +267,7 @@
                             background: rgba(20,115,238,0.56);">
                             <div class="flex-center pt-4">
                                 <a href="{{$artist_data->last()->webpage}}">
-                                    <img src="{{ asset('jpg/img-04.jpg') }}" alt="Image"
+                                    <img src="{{ asset('images/artist/'.$newest_artist_img) }}" alt="Image"
                                          class="rounded-circle tm-img-timeline animated"
                                          style="height: 100px; width: 100px">
                                 </a>
@@ -265,26 +276,6 @@
                                             data-toggle="modal">
                                         <h3>{{$artist_data->last()->name}}</h3>
                                     </button>
-                                </div>
-                                <div class="bs-example">
-                                    <!-- Modal HTML -->
-                                    <div id="myModal" class="modal fade" tabindex="-1">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Band</h5>
-                                                    <button type="button" class="close" data-dismiss="modal">&times;
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>{{$artist_data->last()->text}}</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary">Ok</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +295,7 @@
                             background: rgba(20,115,238,0.56);">
                                 <div class="flex-center pt-4">
                                     <a href="{{$foundation_data->last()->webpage}}">
-                                        <img src="{{ asset('jpg/img-03.jpg') }}" alt="Image"
+                                        <img src="{{ asset('images/foundation/'.$newest_foundation_img) }}" alt="Image"
                                              class="rounded-circle tm-img-timeline"
                                              style="height: 100px; width: 100px">
                                     </a>
@@ -316,14 +307,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pt-0" id="panel2">
-                                <div class="backdrop" style="
-                                border-radius: 50px 50px 50px 50px;
-                                height: 170px;
-                                width: 800px;
-                                background: rgba(23,21,61,0.56);">
-                                    <div class="flex-center pt-4 pl-3 pr-3 text-center"
-                                         style="color: #fff; font-size: 16px">
+                            <div class="pt-0 " id="panel2">
+                                <div class="flex-center">
+                                    <div class="pt-4 pl-3 pr-3 text-center" style="color: #fff; font-size: 16px">
                                         <text>{{$foundation_data->last()->text}}
                                         </text>
                                     </div>
