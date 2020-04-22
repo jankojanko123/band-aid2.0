@@ -5,7 +5,7 @@
             <h1>Who is the foundation?</h1>
         </div>
         <div class="row">
-            <form action="/foundation/submit" method="post">
+            <form id="foundation" action="/foundation/submit" method="post" enctype="multipart/form-data">
                 @if ($errors->any())
                     <div class="alert alert-danger" role="alert">
                         Nada inputs
@@ -31,13 +31,15 @@
                 </div>
                 <div class="form-group row">
                     <label for="text" class="col-md-4 col-form-label">Foundation Text</label>
-
-                    <input id="text"
+                </div>
+                <div class="md-form">
+                    <textarea id="text"
                            type="text"
+                           rows="5"
                            class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}"
                            name="text"
                            value="{{ old('text') }}"
-                           autocomplete="text" autofocus>
+                           autocomplete="text" autofocus></textarea>
 
                     @if ($errors->has('text'))
                         <span class="invalid-feedback" role="alert">
@@ -63,24 +65,43 @@
                     @endif
                 </div>
                 <div class="form-group row">
-                    <label for="img" class="col-md-4 col-form-label">Foundation Img</label>
-                    <input id="img"
-                           type="text"
-                           class="form-control{{ $errors->has('img') ? ' is-invalid' : '' }}"
-                           name="img"
-                           value="{{ old('img') }}"
-                           autocomplete="img" autofocus>
 
-                    @if ($errors->has('img'))
+                    <label for="image" class="col-md-4 col-form-label">Image</label>
+
+                    <input id="image"
+                           type="file"
+                           class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
+                           name="image"
+                           value="{{ old('image') }}"
+                           autocomplete="image" autofocus>
+
+                    @if ($errors->has('image'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('img') }}</strong>
+                            <strong>{{ $errors->first('image') }}</strong>
                         </span>
                     @endif
                 </div>
-                <div class="row pt-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                    <div class="form-group row">
+
+                        <label for="img" class="col-md-4 col-form-label">Image</label>
+
+                        <input id="img"
+                               type="text"
+                               class="form-control{{ $errors->has('img') ? ' is-invalid' : '' }}"
+                               name="img"
+                               value="no need"
+                               autocomplete="img" autofocus>
+
+                        @if ($errors->has('img'))
+                            <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('img') }}</strong>
+                        </span>
+                        @endif
+                    </div>
             </form>
+        </div>
+        <div class="row pt-4">
+            <button type="submit" form="foundation" class="btn btn-primary">Submit</button>
         </div>
     </div>
 @endsection

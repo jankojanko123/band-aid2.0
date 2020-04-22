@@ -6,7 +6,7 @@
         </div>
         <div class="row">
 
-            <form action="/artist/submit" method="post">
+            <form id="artist" action="/artist/submit" method="post" enctype="multipart/form-data">
                 @if ($errors->any())
                     <div class="alert alert-danger" role="alert">
                         Nada inputs
@@ -35,7 +35,7 @@
                 <div class="form-group row">
                     <label for="text" class="col-md-4 col-form-label">Description</label>
                 </div>
-                    <div class="md-form">
+                <div class="md-form">
                         <textarea id="text"
                                   type="text"
                                   rows="5"
@@ -145,10 +145,27 @@
                         </span>
                     @endif
                 </div>
-                <div class="row pt-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group row">
+
+                    <label for="image" class="col-md-4 col-form-label">Image</label>
+
+                    <input id="image"
+                           type="file"
+                           class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}"
+                           name="image"
+                           value="{{ old('image') }}"
+                           autocomplete="image" autofocus>
+
+                    @if ($errors->has('image'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('image') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </form>
+        </div>
+        <div class="row pt-1">
+            <button type="submit" class="btn btn-primary" form="artist">Submit</button>
         </div>
     </div>
 @endsection

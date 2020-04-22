@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +17,6 @@ use Illuminate\Http\Request;
 */
 
 
-Route::get('/submit', function () {
-    return view('submit');
-});
-
 
 Auth::routes();
 
@@ -26,6 +24,9 @@ Route::get('/', 'HomeController@index');
 Route::get('artist/submit', 'ArtistController@edit');
 Route::get('media/submit', 'MediaController@edit');
 Route::get('foundation/submit', 'FoundationController@edit');
+
+Route::get('artist/image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
+Route::post('artist/image-upload', 'ImageUploadController@index')->name('image.upload.post');
 
 Route::post('artist/submit', function (Request $request) {
     $data = $request->validate([
@@ -37,7 +38,11 @@ Route::post('artist/submit', function (Request $request) {
         'band_camp_id' => 'max:255',
         'soundcloud_id' => 'max:255',
         'webpage' => 'max:255',
+        'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
     ]);
+
+    $imageName = time() . '.' . $request->image->extension();
+    $request->image->move(public_path('images/artist'), $imageName);
 
     $link = tap(new App\Artist($data))->save();
 
@@ -59,10 +64,14 @@ Route::post('media/submit', function (Request $request) {
 Route::post('foundation/submit', function (Request $request) {
     $data = $request->validate([
         'name' => 'required|max:255',
-        'text' => 'required|max:255',
+        'text' => 'required|max:600',
         'webpage' => 'required|max:255',
         'img' => 'required|max:255',
+        'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
     ]);
+    $imageName = time() . '.' . $request->image->extension();
+    $request->image->move(public_path('images/foundation'), $imageName);
+
 
     $link = tap(new App\Foundation($data))->save();
 
