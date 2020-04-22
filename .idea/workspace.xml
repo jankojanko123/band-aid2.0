@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d18658-7e9c-4315-aa08-72147d13da6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageUploadController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_22_132242_add_image_to_artists.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_22_134133_add_image_to_foundations.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/artist/1587563144.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/artist/1587564061.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563308.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563330.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563602.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563648.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563720.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563761.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563767.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587563889.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/foundation/1587564178.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/artist/ImageUpload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/links.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/links.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/artist/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/artist/submit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/foundation/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/foundation/submit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/submit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +194,7 @@
       <workItem from="1587043460634" duration="5319000" />
       <workItem from="1587367373325" duration="26568000" />
       <workItem from="1587455381490" duration="11368000" />
-      <workItem from="1587552211262" duration="9143000" />
+      <workItem from="1587552211262" duration="9520000" />
     </task>
     <servers />
   </component>
