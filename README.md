@@ -1,6 +1,7 @@
-# Project Title
+# BandAid
 
-BandAid live charity streams
+Live charity streams, wich uses twich and donatify apis to make a livestream/charity platform
+
 
 ## Getting Started
 
