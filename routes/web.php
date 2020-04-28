@@ -77,3 +77,4 @@ Route::post('foundation/submit', function (Request $request) {
 
     return redirect('/');
 });
+
