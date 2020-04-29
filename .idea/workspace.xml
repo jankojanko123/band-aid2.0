@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d18658-7e9c-4315-aa08-72147d13da6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/dump/configlines4server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/php/get_img.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/php/get_twich.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
@@ -170,16 +170,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel\links\public\images\foundation" />
-      <recent name="C:\xampp\htdocs\Laravel\links\public\images\artist" />
-      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\foundation" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views" />
       <recent name="C:\xampp\htdocs\Laravel\links\app\Http\curl" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\media" />
+      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel\links\public" />
+      <recent name="C:\xampp\htdocs\Laravel\links\public\images\foundation" />
+      <recent name="C:\xampp\htdocs\Laravel\links\public\images\artist" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
     </key>
   </component>
@@ -212,7 +213,9 @@
       <workItem from="1587987847195" duration="2752000" />
       <workItem from="1588063148402" duration="6759000" />
       <workItem from="1588089695591" duration="191000" />
-      <workItem from="1588089895670" duration="910000" />
+      <workItem from="1588089895670" duration="1613000" />
+      <workItem from="1588091856017" duration="1087000" />
+      <workItem from="1588148952547" duration="12319000" />
     </task>
     <servers />
   </component>
@@ -223,10 +226,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Deployment" timestamp="1588089922851">
+    <state x="361" y="71" key="#Deployment" timestamp="1588151207583">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1588089922851" />
+    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1588151207583" />
+    <state x="361" y="71" key="#Options" timestamp="1588092145683">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Options/0.0.1536.824@0.0.1536.824" timestamp="1588092145683" />
     <state x="515" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587389471220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -248,19 +255,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1587989398564" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588089778563">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588150707981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586872551723" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588089778563" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588150707981" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1587020675174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587020675174" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1588065343369">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1588159936606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1588065343369" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1588159936606" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1587381039897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,24 +287,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586981379009" />
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588089895448">
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588148957001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587043460500" />
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588089895448" />
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588148957001" />
     <state x="639" y="288" key="publish.login" timestamp="1588089725136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="639" y="288" key="publish.login/0.0.1536.824@0.0.1536.824" timestamp="1588089725136" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1588088555671">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588167954816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586966945219" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588088555671" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588090520477">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588167954816" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588161044596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021629047" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588090520477" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588161044596" />
   </component>
 </project>
