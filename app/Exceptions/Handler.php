@@ -63,7 +63,7 @@ class Handler extends ExceptionHandler
         // You can add your own exception here
         // so redirect to the home route
         if ($exception instanceof NotFoundHttpException) {
-            return redirect()->route('media/submit');
+            return redirect()->route('/');
         }
 
         return parent::render($request, $exception);

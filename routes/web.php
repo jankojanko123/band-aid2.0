@@ -78,3 +78,7 @@ Route::post('foundation/submit', function (Request $request) {
     return redirect('/');
 });
 
+Route::any('{query}',
+    function() { return redirect('/'); })
+    ->where('query', '.*');
+
