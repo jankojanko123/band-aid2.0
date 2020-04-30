@@ -76,7 +76,7 @@
             font-weight: 200;
             height: 100vh;
             margin: 0;
-            background-color: rgb(37, 37, 37)
+            background-color: rgb(37, 10, 12);
         }
 
         .bs-example {
@@ -137,18 +137,18 @@
 
         #panel1 {
             display: none;
-            border-radius: 50px 50px 50px 50px;
-            height: 170px;
+            /*border-radius: 50px 50px 50px 50px;*/
+            height: 180px;
             width: 800px;
-            background: rgba(23, 21, 61, 0.56);
+            background: rgba(9, 9, 9, 0.56);
         }
 
         #panel2 {
             display: none;
-            border-radius: 50px 50px 50px 50px;
-            height: 170px;
+            /*border-radius: 50px 50px 50px 50px;*/
+            height: 180px;
             width: 800px;
-            background: rgba(23, 21, 61, 0.56);
+            background: rgba(9, 9, 9, 0.56);
         }
 
         .fa {
@@ -171,11 +171,6 @@
             color: white;
         }
 
-        .fa-twitter {
-            background: #55ACEE;
-            color: white;
-        }
-
         .fa-youtube {
             background: #bb0000;
             color: white;
@@ -184,12 +179,6 @@
         .fa-instagram {
             background: #125688;
             color: white;
-        }
-
-        .fa-snapchat-ghost {
-            background: #fffc00;
-            color: white;
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
 
         .fa-soundcloud {
@@ -264,6 +253,7 @@
         }
     </style>
 </head>
+
 <body>
 
 
@@ -290,12 +280,15 @@
     </div>
 @endif
 
+
 <div class="container-fluid float-left pt-4 d-flex">
+
     <div class="backdrop" style="
-        border-radius: 0 0 100px 100px;
+    box-shadow: 10px 10px 5px #000000;
+        /*border-radius: 0 0 100px 100px;*/
         height: 700px;
         width: 1000px;
-        background: rgba(5,10,19,0.82);">
+        background: rgba(9,9,9,0.82);">
         <div class="row">
             <div class="col-4">
                 <div id="twitch-embed"
@@ -303,15 +296,16 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-3">
             <div class="col-12">
                 <div class="pl-5 float-left">
                     <div class="flex-center">
                         <div class="backdrop pt-3" style="
-                            border-radius: 0px 0px 100px 100px;
+
+                            /*border-radius: 100px 100px 100px 100px;*/
                             height: 70px;
                             width: auto;
-                            background: rgba(20,115,238,0.56);">
+                            background: rgba(48,48,48,0.56);">
                             <h5 class="pt-2 pl-5 pr-5" style="color: seashell">{{$media_title}}</h5>
                         </div>
                     </div>
@@ -320,12 +314,12 @@
                     <div class="flex-center">
                         <div class="flex-center pt-0" style="color: rgba(255,251,255,0.96);">
                             <div class="backdrop pt-3" style="
-                            border-radius: 0px 0px 100px 100px;
+                            /*border-radius: 100px 100px 100px 100px;*/
                             height: 70px;
                             width: auto;
-                            background: rgba(20,115,238,0.56);">
+                            background: rgba(48,48,48,0.56);">
                                 <div>
-                                    <h5 class="pt-2 pl-5 pr-5" style="color: seashell">{{$viewer_count}}  viewers</h5>
+                                    <h5 class="pt-2 pl-5 pr-5" style="color: seashell">{{$viewer_count}} viewers</h5>
                                 </div>
                             </div>
                         </div>
@@ -335,13 +329,14 @@
         </div>
         <div class="row pt-5 pl-3">
             <div class="backdrop" style="
-                    border-radius: 100px 100px 100px 100px;
-                    height: 140px;
-                    width: 1100px;
-                    background: rgba(5,10,19,0.82);">
+            box-shadow: 10px 10px 5px #000000;
+                    /*border-radius: 100px 100px 100px 100px;*/
+                    height: 100px;
+                    width: 1000px;
+                    background: rgba(9,9,9,0.82);">
                 <div class="col-12 pt-4">
                     <div class="flex-center pt-1" style="color: rgba(255,251,255,0.96);">
-                        <h4>69</h4> <h4>/</h4> <h4>420</h4>
+                        <h4>300</h4> <h4>/</h4> <h4>400</h4>
                     </div>
                     <div class="progress" style="height: 20px">
                         <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
@@ -352,19 +347,20 @@
         </div>
     </div>
 
-    <div class="container-fluid float-right d-flex">
+    <div class="container-fluid float-right d-flex pl-4">
         <div class="row">
             <div class="col-7">
                 <div class="backdrop" style="
-                    border-radius: 100px 100px 100px 100px;
-                    height: 800px;
+                box-shadow: 10px 10px 5px #000000;
+                    /*border-radius: 100px 100px 100px 100px;*/
+                    height: 830px;
                     width: 800px;
-                    background: rgba(5,10,19,0.82);">
+                    background: rgba(9,9,9,0.82);">
                     <div class="backdrop" style="
-                            border-radius: 200px 200px 100px 100px;
+                            /*border-radius: 200px 200px 100px 100px;*/
                             height: 150px;
                             width: 800px;
-                            background: rgba(20,115,238,0.56);">
+                            background: rgba(48,48,48,0.56);">
                         <div class="flex-center pt-4">
                             <a href="{{$artist_data->last()->webpage}}">
                                 <img src="{{ asset('images/artist/'.$newest_artist_img) }}" alt="Image"
@@ -373,7 +369,7 @@
                             </a>
                             <div class="pl-3" id="flip1">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn pulse-button" data-toggle="modal"
+                                <button type="button" class="btn" data-toggle="modal"
                                         data-target="#exampleModalCenter">
                                     <div class="d-flex" style="color: seashell">
                                         <h3>{{$artist_data->last()->name}}</h3>
@@ -394,13 +390,12 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-spotify"></a>
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-apple"></a>
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-twitter"></a>
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-youtube"></a>
+                                        <a href="{{$artist_data->last()->spotify_id}}" class="fa fa-spotify"></a>
+                                        <a href="{{$artist_data->last()->apple_music}}" class="fa fa-apple"></a>
+                                        <a href="{{$artist_data->last()->youtube_id}}" class="fa fa-youtube"></a>
                                         <a href="{{$artist_data->last()->webpage}}" class="fa fa-instagram"></a>
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-soundcloud"></a>
-                                        <a href="{{$artist_data->last()->webpage}}" class="fa fa-bandcamp"></a>
+                                        <a href="{{$artist_data->last()->soundcloud_id}}" class="fa fa-soundcloud"></a>
+                                        <a href="{{$artist_data->last()->band_camp_id}}" class="fa fa-bandcamp"></a>
                                         <a href="{{$artist_data->last()->webpage}}"
                                            class="fa fa-external-link-square"></a>
                                     </div>
@@ -422,12 +417,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-4">
+                    <div class="pt-0">
                         <div class="backdrop" style="
-                            border-radius: 50px 50px 50px 50px;
+                            /*border-radius: 50px 50px 50px 50px;*/
                             height: 150px;
                             width: 800px;
-                            background: rgba(20,115,238,0.56);">
+                            background: rgba(48,48,48,0.56);">
                             <div class="flex-center pt-4">
                                 <a href="{{$foundation_data->last()->webpage}}">
                                     <img src="{{ asset('images/foundation/'.$newest_foundation_img) }}"
@@ -454,7 +449,7 @@
                     </div>
                     <div class="flex-center pt-5">
                         <a class="dbox-donation-button text-center" style="
-                            background: rgba(20,115,238,0.56) url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png)
+                            background: rgba(48,48,48,0.56) url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png)
                             no-repeat 37px;
                             color: #fff;
                             text-decoration: none;
@@ -464,7 +459,7 @@
                             padding: 5px 15px 15px 15px;
                             -webkit-border-radius: 2px;
                             -moz-border-radius: 2px;
-                            border-radius: 50px 50px 50px 50px;
+                            /*border-radius: 50px 50px 50px 50px;*/
                             height: 40px;
                             width: 570px;
                         }" href="https://pages.donately.com/bandaid/form/frm_a4dd29054afc">Donate</a>
@@ -476,6 +471,7 @@
 </div>
 
 </body>
+
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
 <script type="text/javascript">
 
@@ -508,5 +504,24 @@
 
     });
 </script>
+<script>
+    var c = document.createElement('canvas'),
+        ctx = c.getContext('2d'),
+        cw = c.width = 500,
+        ch = c.height = 500;
+    var sha = Math.floor(Math.random() * 500);
+
+    for( var x = 0; x < cw; x++ ){
+        for( var y = 0; y < ch; y++ ){
+
+            ctx.fillStyle = 'hsl('+ sha +', 100%, ' + ( 20 - ( Math.random() * 15 ) ) + '%)';
+            ctx.fillRect(x, y, 600, 600);
+
+        }
+    }
+
+    document.body.style.background = 'url(' + c.toDataURL() + ')';
+</script>
+
 
 </html>
