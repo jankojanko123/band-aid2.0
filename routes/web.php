@@ -31,7 +31,7 @@ Route::post('artist/image-upload', 'ImageUploadController@index')->name('image.u
 Route::post('artist/submit', function (Request $request) {
     $data = $request->validate([
         'name' => 'required|max:255',
-        'text' => 'required|max:255',
+        'text' => 'required|max:600',
         'apple_music' => 'max:255',
         'spotify_id' => 'max:255',
         'youtube_id' => 'max:255',
