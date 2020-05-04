@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d18658-7e9c-4315-aa08-72147d13da6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/welcome.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,20 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,20 +177,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/foundation" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel\links\public" />
+      <recent name="C:\xampp\htdocs\Laravel\links\public\images\foundation" />
+      <recent name="C:\xampp\htdocs\Laravel\links\public\images\artist" />
+      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\foundation" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views" />
       <recent name="C:\xampp\htdocs\Laravel\links\app\Http\curl" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\media" />
-      <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel\links\public" />
-      <recent name="C:\xampp\htdocs\Laravel\links\public\images\foundation" />
-      <recent name="C:\xampp\htdocs\Laravel\links\public\images\artist" />
       <recent name="C:\xampp\htdocs\Laravel\links\resources\views\artist" />
     </key>
   </component>
@@ -213,7 +229,9 @@
       <workItem from="1588148952547" duration="13463000" />
       <workItem from="1588238395485" duration="4255000" />
       <workItem from="1588248864008" duration="10740000" />
-      <workItem from="1588318838883" duration="31000" />
+      <workItem from="1588318838883" duration="3054000" />
+      <workItem from="1588451201862" duration="3633000" />
+      <workItem from="1588534424401" duration="4372000" />
     </task>
     <servers />
   </component>
@@ -276,33 +294,33 @@
     </state>
     <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021874156" />
     <state x="472" y="100" width="971" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1587563298427" />
-    <state x="38" y="90" width="1371" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587563246529">
+    <state x="94" y="100" width="1146" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588538019136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="94" y="100" width="507" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586981379009" />
-    <state x="38" y="90" width="1371" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1587563246529" />
+    <state x="94" y="100" width="1146" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588538019136" />
+    <state x="38" y="90" width="1371" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1588455866091" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1586981379009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586981379009" />
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588318840104">
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588534433294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587043460500" />
-    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588318840104" />
+    <state x="68" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588534433294" />
     <state x="639" y="288" key="publish.login" timestamp="1588089725136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="639" y="288" key="publish.login/0.0.1536.824@0.0.1536.824" timestamp="1588089725136" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1588263669476">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1588454548231">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1586966945219" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588263669476" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588161044596">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1588454548231" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588536272364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1587021629047" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588161044596" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1588536272364" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588534461257" />
   </component>
 </project>
