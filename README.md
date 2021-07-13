@@ -23,7 +23,6 @@ Pull master, change, upload on seperate repo /w good name, comment changes
 ## Authors
 
 * **Jan Mihevc** - *Initial project code* - [jankojanko123](https://github.com/jankojanko123)
-* **Benjamin Music** - *Mobile optimization* - [](https://github.com/)
 
 
 ## License
